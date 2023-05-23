@@ -31,6 +31,7 @@ function App() {
         if(user.id){
             const newUserList = list.map(userItem => userItem.id === user.id ? user : userItem)
             setList(newUserList)
+            setUserEdit({})
         } else {
             const userListFromServer = {
                 ...user,

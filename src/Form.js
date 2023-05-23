@@ -40,6 +40,9 @@ export default function Form({ userEdit, onFormSubmit }) {
             "phone": phone,
         }
         onFormSubmit(user)
+        setUserName('')
+        setUserSurname('')
+        setUserPhone('')
     }
 
 
